@@ -1,0 +1,870 @@
+/* ----- Import + General CSS ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    color: white;
+    overflow-x: hidden;
+    user-select: none;
+    background: linear-gradient(180deg, rgba(132, 167, 161, 1) 0%, rgba(46, 138, 153, 1) 35%, rgba(31, 110, 140, 1) 65%, rgba(14, 41, 84, 1) 100%);
+}
+
+h3,
+h4 {
+    margin: 8rem 0 2rem 0;
+    text-align: center;
+    z-index: 1;
+}
+
+/* ----- ----------- ----- */
+
+
+
+/* ----- Animation On Scroll CSS ----- */
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translatex(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translatex(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+/* ----- ----------- ----- */
+
+
+
+/*----- Scrollbar CSS -----*/
+
+::-webkit-scrollbar {
+    width: 12px;
+    background: #4f4f4f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c3c3c3;
+}
+
+/* ----- ----------- ----- */
+
+
+
+/*----- General CSS Blocks -----*/
+
+.block-start {
+    height: 100vh;
+}
+
+.block-1,
+.block-3 {
+    height: 100%;
+}
+
+.block-2 {
+    height: 100%;
+}
+
+.block-end,
+.footer-info {
+    height: 50vh;
+}
+
+/* ----- ----------- ----- */
+
+
+
+/* ----- CSS Waves ----- */
+
+.wave1 {
+    position: absolute;
+    top: 1;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave1 svg {
+    position: relative;
+    display: block;
+    width: calc(141% + 1.3px);
+    height: 248px;
+}
+
+.wave1 .shape-fill {
+    fill: #84B3AB;
+}
+
+.wave2 {
+    position: absolute;
+    top: 1;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(126% + 1.3px);
+    height: 90px;
+}
+
+.wave2 .shape-fill {
+    fill: #5a9fa2;
+}
+
+.wave3 {
+    position: absolute;
+    top: 1;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave3 svg {
+    position: relative;
+    display: block;
+    width: calc(200% + 1.3px);
+    height: 124px;
+    transform: rotateY(180deg);
+}
+
+.wave3 .shape-fill {
+    fill: #174d71;
+}
+
+/* ----- ----------- ----- */
+
+
+
+/* -----  CSS Block-Start ----- */
+
+.block-start {
+    display: flex;
+    flex-direction: column;
+    background: #84B3AB;
+}
+
+.block-start div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.block-start h1,
+.block-start h2 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/* ----- Logo Mon Portfilio ----- */
+
+h1 path:nth-child(2) {
+    stroke-dasharray: 545;
+    stroke-dashoffset: 545;
+    animation: line-animation 2s ease forwards;
+}
+
+h1 path:nth-child(3) {
+    stroke-dasharray: 180;
+    stroke-dashoffset: 180;
+    animation: line-animation 2s ease forwards;
+}
+
+h1 path:nth-child(4) {
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: line-animation 2s ease forwards;
+}
+
+h1 path:nth-child(5) {
+    stroke-dasharray: 245;
+    stroke-dashoffset: 245;
+    animation: line-animation 2s ease forwards;
+}
+
+h1 path:nth-child(6) {
+    stroke-dasharray: 180;
+    stroke-dashoffset: 180;
+    animation: line-animation 2s ease forwards;
+}
+
+h1 path:nth-child(7) {
+    stroke-dasharray: 180;
+    stroke-dashoffset: 180;
+    animation: line-animation 2s ease forwards;
+}
+
+h1 path:nth-child(8) {
+    stroke-dasharray: 235;
+    stroke-dashoffset: 235;
+    animation: line-animation 2s ease forwards;
+}
+
+h1 path:nth-child(9) {
+    stroke-dasharray: 250;
+    stroke-dashoffset: 250;
+    animation: line-animation 2s ease forwards;
+}
+
+h1 path:nth-child(10) {
+    stroke-dasharray: 180;
+    stroke-dashoffset: 180;
+    animation: line-animation 2s ease forwards;
+}
+
+h1 path:nth-child(11) {
+    stroke-dasharray: 195;
+    stroke-dashoffset: 195;
+    animation: line-animation 2s ease forwards;
+}
+
+h1 path:nth-child(12) {
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
+    animation: line-animation 2s ease forwards;
+}
+
+h1 path:nth-child(13) {
+    stroke-dasharray: 180;
+    stroke-dashoffset: 180;
+    animation: line-animation 2s ease forwards;
+}
+
+/* ----- Logo Johan Labbe ----- */
+
+h2 path:nth-child(2) {
+    stroke-dasharray: 160;
+    stroke-dashoffset: 160;
+    animation: line-animation 2s ease forwards;
+
+}
+
+h2 path:nth-child(3) {
+    stroke-dasharray: 130;
+    stroke-dashoffset: 130;
+    animation: line-animation 2s ease forwards;
+}
+
+h2 path:nth-child(4) {
+    stroke-dasharray: 240;
+    stroke-dashoffset: 240;
+    animation: line-animation 2s ease forwards;
+}
+
+h2 path:nth-child(5) {
+    stroke-dasharray: 165;
+    stroke-dashoffset: 165;
+    animation: line-animation 2s ease forwards;
+}
+
+h2 path:nth-child(6) {
+    stroke-dasharray: 215;
+    stroke-dashoffset: 215;
+    animation: line-animation 2s ease forwards;
+}
+
+h2 path:nth-child(7) {
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
+    animation: line-animation 2s ease forwards;
+}
+
+h2 path:nth-child(8) {
+    stroke-dasharray: 165;
+    stroke-dashoffset: 165;
+    animation: line-animation 2s ease forwards;
+}
+
+h2 path:nth-child(9) {
+    stroke-dasharray: 190;
+    stroke-dashoffset: 190;
+    animation: line-animation 2s ease forwards;
+}
+
+h2 path:nth-child(10) {
+    stroke-dasharray: 190;
+    stroke-dashoffset: 190;
+    animation: line-animation 2s ease forwards;
+}
+
+h2 path:nth-child(11) {
+    stroke-dasharray: 195;
+    stroke-dashoffset: 195;
+    animation: line-animation 2s ease forwards;
+}
+
+@keyframes line-animation {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* ----- CSS NavBar ----- */
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar img {
+    height: 50px;
+    padding: 0 1.5rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    padding: 2rem;
+}
+
+.navbar li:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.navbar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+@media (max-width: 1460px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar li {
+        padding: 1rem;
+    }
+}
+
+/* ----- Animation Elements Navbar ----- */
+
+.navbar ul li:nth-child(2) {
+    transition-delay: 100ms;
+}
+
+.navbar ul li:nth-child(3) {
+    transition-delay: 200ms;
+}
+
+.navbar ul li:nth-child(4) {
+    transition-delay: 300ms;
+}
+
+.navbar ul li:nth-child(5) {
+    transition-delay: 400ms;
+}
+
+/* ----- ----------- ----- */
+
+
+
+/* ----- Lazy Load CSS ----- */
+
+.lazyload {
+    background-size: cover;
+    background-position: center;
+}
+
+/* ----- ----------- ----- */
+
+
+
+/* ----- CSS Block-1 ----- */
+
+.block-1 {
+    display: flex;
+    padding: 6rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #5a9fa2;
+}
+
+.block-1 section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-1 section p {
+    text-align: justify;
+    font-size: 2rem;
+    margin: 2%;
+    width: 60%;
+}
+
+/* ----- Animation Elements Block-1 ----- */
+
+.block-1 section div {
+    transition-delay: 100ms;
+}
+
+.block-1 section p {
+    transition-delay: 200ms;
+}
+
+/* ----- CSS Image Wrapper ----- */
+
+.image-wrapper {
+    margin: 2%;
+}
+
+.image-wrapper img {
+    filter: grayscale(0.5);
+    border-radius: 2rem;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ----- Media Queries Block-1 ----- */
+
+@media (max-width: 1585px) {
+    .block-1 section {
+        flex-direction: column;
+    }
+
+    .image-wrapper {
+        margin: 0 5%;
+    }
+}
+
+@media (max-width: 460px) {
+    .block-1 section p {
+        font-size: 1.15rem;
+        width: 85%;
+    }
+
+
+}
+
+/* ----- ----------- ----- */
+
+
+
+/* ----- CSS Block-2 ----- */
+
+.block-2 {
+    display: flex;
+    flex-direction: column;
+    background: #1f6e8c;
+    background: linear-gradient(180deg, #1f6e8c 50%, #174d71 100%) ;
+}
+
+/* ----- card Element Container ----- */
+
+.card-element-container {
+    display: grid;
+    justify-items: center;
+    margin: 2rem 2rem 6rem 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+}
+
+.box {
+    margin: 2rem;
+    border-radius: 2rem;
+    box-shadow: inset 5px 5px 5px #1a5e77,
+        inset -5px -5px 5px #247fa1,
+        5px 5px 5px #1a5e77,
+        -5px -5px 5px #247fa1;
+}
+
+/* ----- card Elements ----- */
+
+.card-element {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 2rem;
+    height: 550px;
+    width: 400px;
+    background-color: rgb(31, 110, 140);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.card-element:nth-child(1),
+.card-element:nth-child(3),
+.card-element:nth-child(5) {
+    filter: blur(5px);
+    animation: blur ease 1.6s forwards;
+
+}
+
+.card-element:nth-child(3) {
+    animation-delay: 200ms;
+}
+
+.card-element:nth-child(5) {
+    animation-delay: 400ms;
+}
+
+@keyframes blur {
+    to {
+        filter: blur(0);
+    }
+}
+
+.card-element img {
+    display: none;
+    z-index: -1;
+}
+
+.card-element h2 {
+    position: absolute;
+    top: -0.75rem;
+    right: 2rem;
+    font-size: 10rem;
+    color: rgba(255, 255, 255, 0.15);
+    transition: 0.5s;
+}
+
+.card-element:hover h2 {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.card-element h3 {
+    font-size: 1.65rem;
+    margin: 2rem;
+    color: white;
+}
+
+.card-element:hover h3 {
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+.card-element:hover {
+    background-color: rgb(132, 179, 171);
+    transform: translateY(-15%);
+}
+
+.card-element:hover button {
+    background-color: rgb(31, 110, 140);
+    transition: 0.5s;
+}
+
+.card-element button,
+.popover a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(132, 179, 171);
+    padding: 1.25rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+/* ----- CSS Popover ----- */
+
+.popover {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: row;
+    grid-template-areas:
+        "popover-img popover-title"
+        "popover-description popover-info"
+        "popover-btn popover-btn";
+    font-size: 2rem;
+    color: white;
+    border: none;
+    margin: auto;
+    padding: 2rem;
+    width: 85%;
+    height: 85%;
+    border-radius: 2rem;
+    background: rgb(14, 41, 84);
+}
+
+.popover-img img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 13px -7px #000000;
+}
+
+.popover-title h4 {
+    font-size: 4rem;
+}
+
+.popover-btn a {
+    box-shadow: 0px 10px 13px -7px #000000;
+}
+
+.popover::content {
+    visibility: visible;
+}
+
+.popover p {
+    text-align: justify;
+    margin: 6rem;
+}
+
+#popover1::backdrop,
+#popover2::backdrop,
+#popover3::backdrop {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+#popover1,
+#popover2,
+#popover3 {
+    visibility: hidden;
+
+    &:popover-open {
+        visibility: visible;
+        animation: slide 500ms ease-out;
+    }
+}
+
+@keyframes slide {
+    from {
+        visibility: hidden;
+        transform: translateY(2rem);
+    }
+
+    to {
+        visibility: visible;
+        transform: translateY(0rem);
+    }
+}
+
+/* ----- CSS Popover Bar ----- */
+
+.popover-info h4 {
+    font-size: 2.5rem;
+}
+
+.popover-info h5 {
+    margin: 1rem;
+}
+
+.bar {
+    display: block;
+    height: 1rem;
+    width: 100%;
+    margin: 0.5rem;
+    border: #1a5e77 solid 3px;
+    border-radius: 0.35rem;
+    overflow: hidden;
+    background-color: #0e2954;
+}
+
+.bar span {
+    height: 1rem;
+    float: left;
+    background: linear-gradient(-90deg, rgb(31, 110, 140) 0%, rgb(132, 179, 171) 100%);
+}
+
+.html {
+    width: 85%;
+}
+
+.css {
+    width: 75%;
+}
+
+.js {
+    width: 35%;
+}
+
+/* ----- Popover Grid Area ----- */
+
+
+.popover-img {
+    grid-area: popover-img;
+}
+
+.popover-title {
+    grid-area: popover-title;
+}
+
+.popover-btn {
+    grid-area: popover-btn;
+}
+
+.popover-info {
+    grid-area: popover-info;
+}
+
+.popover-description {
+    grid-area: popover-description;
+}
+
+/* ----- ----------- ----- */
+
+
+
+/* ----- CSS Block-3 ----- */
+
+.block-3 {
+    display: flex;
+    padding: 6rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #174d71;
+}
+
+.block-3 p,
+.block-3 li {
+    font-size: 2rem;
+}
+
+.skill-container {
+    display: flex;
+}
+
+/* ----- ----------- ----- */
+
+
+
+/* ----- CSS Block-End ----- */
+
+.block-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #0e2954;
+}
+
+.block-end ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.block-end li {
+    display: flex;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    background: #174d71;
+    cursor: pointer;
+}
+
+.block-end li:hover {
+    border-radius: 2rem;
+    background: rgb(31, 110, 140);
+}
+
+.block-end a {
+    display: flex;
+}
+
+.block-end img {
+    height: 4rem;
+}
+
+.block-end p {
+    font-size: 2rem;
+}
+
+
+/* ----- ----------- ----- */
+
+
+
+/* ----- CSS Footer-Info ----- */
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+    background: #0e2954;
+}
+
+/* ----- ----------- ----- */
+
+
+
+/* ----- SrollTop CSS ----- */
+
+#scrolltop {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 10px 15px;
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0px 10px 13px -7px #000000;
+    background-color: rgb(132, 179, 171);
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* ----- ----------- ----- */
