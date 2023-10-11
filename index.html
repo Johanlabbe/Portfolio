@@ -9,7 +9,7 @@
 
     <script src="js/scrolltop.js" defer></script>
     <script src="js/animation.js" defer></script>
-    <script src="js/tooltip.js" defer></script>
+    <script src="js/copy-text.js" defer></script>
 </head>
 <body>
     <div>
@@ -224,10 +224,14 @@
                     <h4 class="hidden">Contact</h4>
                     <div>
                         <p class="hidden">Si vous souhaitez une collaboration ou plus d'inforations à mon sujet, contactez-moi à l'adresse email suivante :</p>
-                        <div class="tooltip-container"><span class="id" id="tooltip-trigger">je suis là !</span>
-                            <div class="tooltip" id="info-tooltip">test !!!</div>
+                        <!-- <p class="hidden">labbejohan26@gmail.com</p> -->
+                        <div class="copy-text">
+                            <input type="text" class="hidden text" value="labbejohan26@gmail.com">
+                            <button class="hidden" onclick="copyClipboard()">
+                                <img src="img/clipboard-text-svgrepo-com.svg" alt="bouton copie presse papier">
+                            </button>
                         </div>
-                        <p class="hidden">labbejohan26@gmail.com</p>
+                    </div>
                     </div>
                     <div>
                         <p class="hidden">Copyright &copy; 2023 - Johan Labbe</p>
