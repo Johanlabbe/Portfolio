@@ -811,7 +811,6 @@ h2 path:nth-child(11) {
 }
 
 .block-end li:hover {
-    border-radius: 2rem;
     background: rgb(31, 110, 140);
 }
 
@@ -848,6 +847,21 @@ h2 path:nth-child(11) {
     margin: 2rem;
 }
 
+.footer-info p:nth-child(2) {
+    width: 50%;
+    text-align: center;
+    font-weight: 600;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 2rem;
+    background: #174d71;
+    cursor: pointer;
+}
+
+.footer-info p:nth-child(2):hover {
+    background: rgb(31, 110, 140);
+}
+
 /* ----- ----------- ----- */
 
 
@@ -871,6 +885,33 @@ h2 path:nth-child(11) {
     background-color: rgb(132, 179, 171);
     cursor: pointer;
     z-index: 1;
+}
+
+/* ----- ----------- ----- */
+
+
+
+/* ----- Tooltip CSS ----- */
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+#tooltip-trigger:hover + .tooltip {
+    display: block;
 }
 
 /* ----- ----------- ----- */

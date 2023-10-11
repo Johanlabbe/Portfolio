@@ -9,6 +9,7 @@
 
     <script src="js/scrolltop.js" defer></script>
     <script src="js/animation.js" defer></script>
+    <script src="js/tooltip.js" defer></script>
 </head>
 <body>
     <div>
@@ -113,7 +114,7 @@
                             <div class="card-element hidden" id="cardElement">
                                 <h2>01</h2>
                                 <h3>Mon Portfolio</h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nihil ex, eaque, repudiandae dicta beatae.</p>
+                                <p>Découvrez mon portfolio en ligne, où je partage mes compétences en développement web et mes projets interactifs.</p>
                                 <button popovertarget="popover1">En savoir plus</button>
                             </div>
                             <div class="popover" id="popover1" popover>
@@ -124,7 +125,7 @@
                                     <h4>Mon Portfolio</h4>
                                 </div>
                                 <div class="popover-description">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, beatae. Ab temporibus recusandae, minus assumenda commodi cupiditate consequuntur quo laborum dolores corrupti nostrum incidunt consequatur quis totam perspiciatis exercitationem ratione ipsam quia deleniti tempora in.</p>
+                                    <p>Découvrez mon portfolio, une vitrine numérique de mon travail. C'est l'endroit où je présente mes réalisations et compétences en développement web. Explorez mes projets et découvrez comment je mets en œuvre la technologie et mes connaissances pour créer des interactions en ligne.</p>
                                 </div>
                                 <div class="popover-info">
                                     <div class="language-used">
@@ -222,7 +223,10 @@
                 <div class="footer-info" id="contact">
                     <h4 class="hidden">Contact</h4>
                     <div>
-                        <p class="hidden">Si vous souhaitez faire une collaboration, contactez-moi à l'adresse email suivante :</p>
+                        <p class="hidden">Si vous souhaitez une collaboration ou plus d'inforations à mon sujet, contactez-moi à l'adresse email suivante :</p>
+                        <div class="tooltip-container"><span class="id" id="tooltip-trigger">je suis là !</span>
+                            <div class="tooltip" id="info-tooltip">test !!!</div>
+                        </div>
                         <p class="hidden">labbejohan26@gmail.com</p>
                     </div>
                     <div>
