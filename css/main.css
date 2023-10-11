@@ -836,10 +836,16 @@ h2 path:nth-child(11) {
 
 .footer-info {
     display: flex;
-    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    padding: 6rem;
     background: #0e2954;
+}
+
+.footer-info p {
+    font-size: 2rem;
+    margin: 2rem;
 }
 
 /* ----- ----------- ----- */
