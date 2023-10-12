@@ -4,12 +4,15 @@ const animatedElements = new Set();
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry);
         const element = entry.target;
+        console.log(entry);
         // Vérifiez si l'élément est visible et n'a pas été animé
         if (entry.isIntersecting && !animatedElements.has(element)) {
-            element.classList.add('show');
-            animatedElements.add(element);
+            const animationType = element.getAttribute('data-animation');
+            if (animationType) {
+                element.classList.add('show', animationType);
+                animatedElements.add(element);
+            }
         }
     });
 });

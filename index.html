@@ -19,11 +19,11 @@
                     <button id="scrolltop"><img src="img/arrow-up-svgrepo-com.svg" alt=""></button>
                     <nav class="navbar">
                         <ul>
-                            <li class="hidden slide-left"><a href="#propos"><img src="img/user-question-alt-svgrepo-com.svg">À Propos</a></li>
-                            <li class="hidden slide-left"><a href="#projets"><img src="img/folders-svgrepo-com.svg">Mes Projets</a></li>
-                            <li class="hidden slide-left"><a href="#competences"><img src="img/skills-svgrepo-com.svg">Mes Compétences</a></li>
-                            <li class="hidden slide-left"><a href="#reseaux"><img src="img/hashtag-svgrepo-com.svg">Mes Réseaux</a></li>
-                            <li class="hidden slide-left"><a href="#contact"><img src="img/phone-call-svgrepo-com.svg">Me Contacter</a></li>
+                            <li class="hidden" data-animation="slide-left"><a href="#propos"><img src="img/user-question-alt-svgrepo-com.svg">À Propos</a></li>
+                            <li class="hidden" data-animation="slide-left"><a href="#projets"><img src="img/folders-svgrepo-com.svg">Mes Projets</a></li>
+                            <li class="hidden" data-animation="slide-left"><a href="#competences"><img src="img/skills-svgrepo-com.svg">Mes Compétences</a></li>
+                            <li class="hidden" data-animation="slide-left"><a href="#reseaux"><img src="img/hashtag-svgrepo-com.svg">Mes Réseaux</a></li>
+                            <li class="hidden" data-animation="slide-left"><a href="#contact"><img src="img/phone-call-svgrepo-com.svg">Me Contacter</a></li>
                         </ul>
                     </nav>
                     <div>
@@ -97,21 +97,21 @@
             </header>
             <main>
                 <div class="block-1" id="propos">
-                    <h3 class="hidden slide-right">À Propos</h3>
+                    <h3 class="hidden" data-animation="slide-right">À Propos</h3>
                     <section>
                         <div class="image-wrapper">
-                            <img class="hidden slide-left" src="img/code.jpg" alt="page de code" loading="lazy">
+                            <img class="hidden" data-animation="slide-left" src="img/code.jpg" alt="page de code" loading="lazy">
                         </div>
-                        <p class="hidden slide-down">
+                        <p class="hidden" data-animation="slide-down">
                         Johan, développeur web junior de 22 ans, passionné par la création en ligne. J'aime exprimer ma créativité à travers le code et le design. Mon parcours est marqué par ma soif d'apprendre et ma curiosité, qui me poussent à découvrir de nouvelles approches pour résoudre des défis. En tant que développeur, j'essaie de combiner l'esthétique et la fonctionnalité pour offrir des expériences agréables aux utilisateurs. Mon portfolio montre mes efforts pour progresser constamment et relever de nouveaux challenges dans le domaine de la conception web.
                         </p>
                     </section>
                 </div>
                 <div class="block-2" id="projets">
-                    <h3 class="hidden">Mes Projets</h3>
+                    <h3 class="hidden" data-animation="slide-left">Mes Projets</h3>
                     <div class="card-element-container">
                         <div class="box">
-                            <div class="card-element hidden" id="cardElement">
+                            <div class="card-element hidden" data-animation="slide-left" id="cardElement">
                                 <h2>01</h2>
                                 <h3>Mon Portfolio</h3>
                                 <p>Découvrez mon portfolio en ligne, où je partage mes compétences en développement web et mes projets interactifs.</p>
@@ -121,36 +121,39 @@
                                 <div class="popover-img">
                                     <img src="img/pf-jl-1280p.png" alt="Mon portfolio" loading="lazy">
                                 </div>
-                                <div class="popover-title">
-                                    <h4>Mon Portfolio</h4>
-                                </div>
-                                <div class="popover-description">
-                                    <p>Découvrez mon portfolio, une vitrine numérique de mon travail. C'est l'endroit où je présente mes réalisations et compétences en développement web. Explorez mes projets et découvrez comment je mets en œuvre la technologie et mes connaissances pour créer des interactions en ligne.</p>
-                                </div>
-                                <div class="popover-info">
-                                    <div class="language-used">
-                                        <h4>Langages utilisées</h4>
-                                        <ul>
-                                            <li>
-                                                <h5>Html</h5>
-                                                <div class="bar"><span class="html"></span></div>
-                                            </li>
-                                            <li>
-                                                <h5>CSS</h5>
-                                                <div class="bar"><span class="css"></span></div>
-                                            </li>
-                                            <li>
-                                                <h5>JavaScript</h5>
-                                                <div class="bar"><span class="js"></span></div>
-                                            </li>
-                                        </ul>
+                                <section>
+                                    <div class="popover-title">
+                                        <h4>Mon Portfolio</h4>
                                     </div>
-                                </div>
-                                <div class="popover-btn"><a href="#">Voir le site</a></div>
+                                    <div class="popover-description">
+                                        <p>Découvrez mon portfolio, une vitrine numérique de mon travail. C'est l'endroit où je présente mes réalisations et compétences en développement web. Explorez mes projets et découvrez comment je mets en œuvre la technologie et mes connaissances pour créer des interactions en ligne.</p>
+                                    </div>
+                                    <div class="popover-info">
+                                        <div class="language-used">
+                                            <h4>Langages utilisées</h4>
+                                            <ul>
+                                                <li>
+                                                    <h5>Html</h5>
+                                                    <div class="bar"><span class="html"></span></div>
+                                                </li>
+                                                <li>
+                                                    <h5>CSS</h5>
+                                                    <div class="bar"><span class="css"></span></div>
+                                                </li>
+                                                <li>
+                                                    <h5>JavaScript</h5>
+                                                    <div class="bar"><span class="js"></span></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="popover-btn"><a href="#">Voir le site</a></div>
+                                </section>
+                                
                             </div>
                         </div>
                         <div class="box">
-                            <div class="card-element hidden" id="cardElement2">
+                            <div class="card-element hidden" data-animation="slide-left" id="cardElement2">
                                 <h2>02</h2>
                                 <h3>Wikanime</h3>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nihil ex, eaque, repudiandae dicta beatae.</p>
@@ -163,7 +166,7 @@
                             </div>
                         </div>
                         <div class="box">
-                            <div class="card-element hidden" id="cardElement3">
+                            <div class="card-element hidden" data-animation="slide-left" id="cardElement3">
                                 <h2>03</h2>
                                 <h3>Délice Sucrée</h3>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nihil ex, eaque, repudiandae dicta beatae.</p>
@@ -183,24 +186,24 @@
                     </div>
                 </div>
                 <div class="block-3" id="competences">
-                    <h3 class="hidden">Mes compétences</h3>
-                    <p class="hidden">Voici un aperçu des compétences que j'ai acquises au cours de ma formation.</p>
+                    <h3 class="hidden" data-animation="slide-up">Mes compétences</h3>
+                    <p class="hidden" data-animation="slide-left">Voici un aperçu des compétences que j'ai acquises au cours de ma formation.</p>
                     <section class="skill-container">
                         <div>
-                            <h4 class="hidden">Front-End</h4>
+                            <h4 class="hidden" data-animation="slide-left">Front-End</h4>
                             <ul>
-                                <li class="hidden">Réaliser une interface webstatique</li>
-                                <li class="hidden">Maquetterune application</li>
-                                <li class="hidden">Développer une interface web dynamique</li>
-                                <li class="hidden">Réaliser une interface de gestion de contenu ou e-comerce</li>
+                                <li class="hidden" data-animation="slide-down">Réaliser une interface webstatique</li>
+                                <li class="hidden" data-animation="slide-down">Maquetterune application</li>
+                                <li class="hidden" data-animation="slide-down">Développer une interface web dynamique</li>
+                                <li class="hidden" data-animation="slide-down">Réaliser une interface de gestion de contenu ou e-comerce</li>
                             </ul>
                         </div>
                         <div>
-                            <h4 class="hidden">Back-End</h4>
+                            <h4 class="hidden" data-animation="slide-right">Back-End</h4>
                             <ul>
-                                <li class="hidden">Créer une base de donées</li>
-                                <li class="hidden">Développer les composant d'accès aux données</li>
-                                <li class="hidden">Développer la partie back-end une application web / web mobile</li>
+                                <li class="hidden" data-animation="slide-down">Créer une base de donées</li>
+                                <li class="hidden" data-animation="slide-down">Développer les composant d'accès aux données</li>
+                                <li class="hidden" data-animation="slide-down">Développer la partie back-end une application web / web mobile</li>
                             </ul>
                         </div>
                     </section>
@@ -211,28 +214,28 @@
                     </svg>
                 </div>
                 <div class="block-end" id="reseaux">
-                    <h4 class="hidden">Mes Réseaux</h4>
-                    <p class="hidden">Suivez moi sur mes réseaux sociaux ci-dessous</p>
+                    <h4 class="hidden" data-animation="slide-up">Mes Réseaux</h4>
+                    <p class="hidden" data-animation="slide-left">Suivez moi sur mes réseaux sociaux ci-dessous</p>
                     <ul>
-                        <li class="hidden"><a href="https://github.com/Johanlabbe" target="_blank"><img src="img/github-svgrepo-com.svg" alt=""></a></li>
-                        <li class="hidden"><a href="https://www.linkedin.com/in/johanlabbe/" target="_blank"><img src="img/linkedin-svgrepo-com.svg" alt=""></a></li>
+                        <li class="hidden" data-animation="slide-right"><a href="https://github.com/Johanlabbe" target="_blank"><img src="img/github-svgrepo-com.svg" alt=""></a></li>
+                        <li class="hidden" data-animation="slide-right"><a href="https://www.linkedin.com/in/johanlabbe/" target="_blank"><img src="img/linkedin-svgrepo-com.svg" alt=""></a></li>
                     </ul>
                 </div>
             </main>
             <footer>
                 <div class="footer-info" id="contact">
-                    <h4 class="hidden">Contact</h4>
+                    <h4 class="hidden" data-animation="slide-down">Contact</h4>
                     <div>
-                        <p class="hidden">Si vous souhaitez une collaboration ou plus d'inforations à mon sujet, contactez-moi à l'adresse email suivante :</p>
+                        <p class="hidden" data-animation="slide-right">Si vous souhaitez une collaboration ou plus d'inforations à mon sujet, contactez-moi à l'adresse email suivante :</p>
                         <div class="copy-text">
-                            <input type="text" class="hidden text" value="labbejohan26@gmail.com" disabled>
-                            <button class="hidden" onclick="copyClipboard()">
+                            <input type="text" class="hidden text" data-animation="slide-left" value="labbejohan26@gmail.com" disabled>
+                            <button class="hidden" data-animation="slide-left" onclick="copyClipboard()">
                                 <img src="img/clipboard-text-svgrepo-com.svg" alt="bouton copie presse papier">
                             </button>
                         </div>
                     </div>
                     <div>
-                        <p class="hidden">Copyright &copy; 2023 - Johan Labbe</p>
+                        <p class="hidden" data-animation="slide-up">Copyright &copy; 2023 - Johan Labbe</p>
                     </div>
             </footer>
         </div>
