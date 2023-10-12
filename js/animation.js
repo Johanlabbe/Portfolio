@@ -5,15 +5,14 @@ const animatedElements = new Set();
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry);
+        const element = entry.target;
         // Vérifiez si l'élément est visible et n'a pas été animé
-        if (entry.isIntersecting && !animatedElements.has(entry.target)) {
-            entry.target.classList.add('show');
-            animatedElements.add(entry.target);
+        if (entry.isIntersecting && !animatedElements.has(element)) {
+            element.classList.add('show');
+            animatedElements.add(element);
         }
     });
 });
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((element) => observer.observe(element));
-
-
