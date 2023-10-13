@@ -786,58 +786,82 @@ h2 path:nth-child(11) {
     margin: 1rem;
 }
 
-.bar {
-    display: block;
-    height: 1rem;
-    width: 100%;
-    margin: 0.5rem;
-    border-radius: 0.35rem;
-    overflow: hidden;
-    background-color: #2e2e2e;
+/* ----- SVG Circles CSS ----- */
+
+.language-used {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+
+circle {
+    fill: none;
 }
 
-.bar span {
-    height: 1rem;
-    float: left;
-    border-radius: 0.35rem;
+.language-used section {
+    display: flex;
+    flex-direction: row;
 }
 
-.html {
-    width: 71.6%;
-    background: #e34c26;
+.language-used svg {
+    transform: rotate(-90deg);
 }
 
-.css {
-    width: 25.6%;
-    background: #563d7c;
+.language-used div:nth-child(1) circle:nth-child(1),
+.language-used div:nth-child(2) circle:nth-child(1),
+.language-used div:nth-child(3) circle:nth-child(1) {
+    stroke: #2e2e2e;
+    stroke-width: 1rem;
 }
 
-.js {
-    width: 2.8%;
-    background: #f1e05a;
+.language-used div:nth-child(1) circle:nth-child(2),
+.language-used div:nth-child(2) circle:nth-child(2),
+.language-used div:nth-child(3) circle:nth-child(2) {
+    stroke-dasharray: 535;
+    stroke-width: 1rem;
+    stroke-linecap: round;
+    
 }
 
-/* ----- Popover Grid Area ----- */
-
-
-.popover-img {
-    grid-area: popover-img;
+.language-used div:nth-child(1) circle:nth-child(2) {
+    stroke: #e34c26;
+    stroke-dashoffset: calc(535 - (535 * 70.7) / 100);
 }
 
-.popover-title {
-    grid-area: popover-title;
+.language-used div:nth-child(2) circle:nth-child(2) {
+    stroke: #563d7c;
+    ;
+    stroke-dashoffset: calc(535 - (535 * 26.4) / 100);
 }
 
-.popover-btn {
-    grid-area: popover-btn;
+.language-used div:nth-child(3) circle:nth-child(2) {
+    stroke: #f1e05a;
+    stroke-dashoffset: calc(535 - (535 * 2.9) / 100);
 }
 
-.popover-info {
-    grid-area: popover-info;
+.language-used div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+    margin: 1rem;
+    background: rgba(207, 207, 207, 0.15);
+    border-radius: 1rem;
+    box-shadow: 0px 10px 13px -7px rgba(0,0,0,0.5), 5px 5px 15px 5px rgba(0,0,0,0);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
-.popover-description {
-    grid-area: popover-description;
+.language-used span {
+    position: absolute;
+    top: 52%;
+    font-size: 2.5rem;
+    font-weight: 900;
 }
 
 /* ----- ----------- ----- */
@@ -1063,7 +1087,6 @@ h2 path:nth-child(11) {
 
 #tooltip-trigger:hover + .tooltip {
     display: block;
-
 }
 
 /* ----- ----------- ----- */
