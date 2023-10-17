@@ -578,7 +578,6 @@ h2 path:nth-child(11) {
 /* ----- card Elements ----- */
 
 .card-element {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -591,14 +590,6 @@ h2 path:nth-child(11) {
     margin: 2rem;
     padding: 2rem;
     border-radius: 2rem;
-}
-
-.card-element:nth-child(1),
-.card-element:nth-child(3),
-.card-element:nth-child(5) {
-    filter: blur(5px);
-    animation: blur ease 1.6s forwards;
-
 }
 
 .card-element:nth-child(3) {
@@ -637,6 +628,7 @@ h2 path:nth-child(11) {
     font-size: 1.65rem;
     margin: 2rem;
     color: white;
+    transition: 0.5s;
 }
 
 .card-element:hover h3 {
@@ -755,7 +747,7 @@ h2 path:nth-child(11) {
 #popover2::backdrop,
 #popover3::backdrop {
     background: rgba(0, 0, 0, 0.05);
-    /* backdrop-filter: blur(5px); */
+    backdrop-filter: blur(5px);
 }
 
 #popover1,
@@ -793,6 +785,10 @@ h2 path:nth-child(11) {
 
 /* ----- SVG Circles CSS ----- */
 
+circle {
+    fill: none;
+}
+
 .language-used {
     display: flex;
     flex-direction: column;
@@ -801,10 +797,6 @@ h2 path:nth-child(11) {
     text-align: center;
     position: relative;
   }
-
-circle {
-    fill: none;
-}
 
 .language-used section {
     display: flex;
@@ -897,8 +889,66 @@ circle {
     font-size: 2rem;
 }
 
+.block-3 h4 {
+    margin: 2rem;
+}
+
+.block-3 li {
+    margin: 2rem 0;
+}
+
 .skill-container {
     display: flex;
+}
+
+.skill-container div {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: #1f6e8c;
+    background-color: #0e2954;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+
+}
+
+.skill-container div:hover {
+    background-color: #1f6e8c;
+    transform: translateY(-5%);
+    transition: 0.5s;
+}
+
+/* ----- Animations Skill Container ----- */
+
+.skill-container div:nth-child(1) li:nth-child(2) {
+    transition-delay: 100ms;
+    animation-delay: 100ms;
+}
+
+.skill-container div:nth-child(1) li:nth-child(3) {
+    transition-delay: 200ms;
+    animation-delay: 200ms;
+
+}
+
+.skill-container div:nth-child(1) li:nth-child(4) {
+    transition-delay: 300ms;
+    animation-delay: 300ms;
+
+}
+
+.skill-container div:nth-child(2) li:nth-child(2) {
+    transition-delay: 100ms;
+    animation-delay: 100ms;
+
+}
+
+.skill-container div:nth-child(2) li:nth-child(3) {
+    transition-delay: 200ms;
+    animation-delay: 200ms;
+
 }
 
 /* ----- ----------- ----- */
