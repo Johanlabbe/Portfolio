@@ -811,14 +811,16 @@ circle {
 
 .language-used div:nth-child(1) circle:nth-child(1),
 .language-used div:nth-child(2) circle:nth-child(1),
-.language-used div:nth-child(3) circle:nth-child(1) {
+.language-used div:nth-child(3) circle:nth-child(1),
+.language-used div:nth-child(4) circle:nth-child(1) {
     stroke: #2e2e2e;
     stroke-width: 1rem;
 }
 
 .language-used div:nth-child(1) circle:nth-child(2),
 .language-used div:nth-child(2) circle:nth-child(2),
-.language-used div:nth-child(3) circle:nth-child(2) {
+.language-used div:nth-child(3) circle:nth-child(2),
+.language-used div:nth-child(4) circle:nth-child(2) {
     stroke-dasharray: 535;
     stroke-width: 1rem;
     stroke-linecap: round;
@@ -837,6 +839,11 @@ circle {
 
 .language-used div:nth-child(3) circle:nth-child(2) {
     stroke: #1eddbd;
+    stroke-dashoffset: calc(535 - (535 * 2.9) / 100);
+}
+
+.language-used div:nth-child(4) circle:nth-child(2) {
+    stroke: #18af64;
     stroke-dashoffset: calc(535 - (535 * 2.9) / 100);
 }
 
@@ -887,14 +894,11 @@ circle {
 .block-3 p,
 .block-3 li {
     font-size: 2rem;
+    margin: 2rem 0;
 }
 
 .block-3 h4 {
     margin: 2rem;
-}
-
-.block-3 li {
-    margin: 2rem 0;
 }
 
 .skill-container {
