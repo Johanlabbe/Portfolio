@@ -481,27 +481,7 @@ h2 path:nth-child(10) {
     width: 60%;
 }
 
-@media (max-width: 1000px) {
-    .block-1 section p {
-        width: 100%;
-    }
-}
 
-@media (max-width: 705px) {
-    .block-1 {
-        padding: 6rem 4rem 0 4rem;
-    }
-    
-    .wave1 {
-        display: none;
-    }
-}
-
-@media (max-width: 410px) {
-    .block-1 {
-        padding: 0;
-    }
-}
 
 /* ----- Animation Elements Block-1 ----- */
 
@@ -538,13 +518,31 @@ h2 path:nth-child(10) {
     }
 }
 
+@media (max-width: 1000px) {
+    .block-1 section p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 705px) {
+    .block-1 {
+        padding: 0rem 4rem 0 4rem;
+    }
+    
+    .wave1 {
+        display: none;
+    }
+}
+
 @media (max-width: 460px) {
     .block-1 section p {
         font-size: 1.15rem;
         width: 85%;
     }
 
-
+    .block-1 {
+        padding: 0;
+    }
 }
 
 /* ----- ----------- ----- */
@@ -576,6 +574,10 @@ h2 path:nth-child(10) {
         inset -5px -5px 5px #247fa1,
         5px 5px 5px #1a5e77,
         -5px -5px 5px #247fa1;
+}
+
+.responsive {
+    display: none;
 }
 
 /* ----- card Elements ----- */
@@ -669,10 +671,62 @@ h2 path:nth-child(10) {
 
 /* ----- Media query Card Element ----- */
 
-@media (max-width: 705px) {
+@media (max-width: 1275px) {
     .card-element-container,
     .card-element,
     .box {
+        display: none;
+    }
+
+    .responsive {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        border-radius: 2rem;
+        width: 95%;
+        padding: 2rem;
+        margin: 0 auto 2rem auto;
+        background: rgba(132, 179, 171, 0.25);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .responsive p {
+        font-size: 2rem;
+    }
+
+    .language-used section {
+        justify-content: center;
+    }
+
+    .language-used h5 {
+        font-size: 1.5rem;
+    }
+    .language-used h4 {
+        margin: 2rem;
+    }
+
+    .responsive a {
+        display: flex;
+        text-decoration: none;
+        color: white;
+        padding: 1.25rem;
+        margin: 1rem;
+        font-size: 1.5rem;
+        background: rgba(207, 207, 207, 0.15);
+        border-radius: 1rem;
+    }
+}
+
+/* ----- Media query Block-2 ----- */
+
+@media (max-width: 705px) {
+    .h3mp {
+        margin: 3rem 0 2rem 0;
+    }
+
+    .wave2 {
         display: none;
     }
 }
@@ -786,6 +840,14 @@ h2 path:nth-child(10) {
     }
 }
 
+/* ----- Media query Popover ----- */
+
+@media (max-width: 1665px) {
+    .popover {
+        width: 85%;
+    }
+}
+
 /* ----- CSS Popover Bar ----- */
 
 .popover-info h4 {
@@ -840,22 +902,22 @@ circle {
     animation: progress 2s ease;
 }
 
-.language-used div:nth-child(1) circle:nth-child(2) {
+section:nth-child(1) .language-used div:nth-child(1) circle:nth-child(2) {
     stroke: #1ed0dd;
     stroke-dashoffset: calc(535 - (535 * 70.7) / 100);
 }
 
-.language-used div:nth-child(2) circle:nth-child(2) {
+section:nth-child(1) .language-used div:nth-child(2) circle:nth-child(2) {
     stroke: #178fdf;
     stroke-dashoffset: calc(535 - (535 * 26.4) / 100);
 }
 
-.language-used div:nth-child(3) circle:nth-child(2) {
+section:nth-child(1) .language-used div:nth-child(3) circle:nth-child(2) {
     stroke: #1eddbd;
     stroke-dashoffset: calc(535 - (535 * 2.9) / 100);
 }
 
-.language-used div:nth-child(4) circle:nth-child(2) {
+section:nth-child(1) .language-used div:nth-child(4) circle:nth-child(2) {
     stroke: #18af64;
     stroke-dashoffset: calc(535 - (535 * 2.9) / 100);
 }
