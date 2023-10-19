@@ -246,141 +246,103 @@ h4 {
 
 }
 
-/* ----- Logo Mon Portfilio ----- */
+/* ----- Logo SVG ----- */
+
+h1 path,
+h2 path {
+    animation: line-animation 2s ease forwards;
+}
+
+/* ----- Mon Portfilio ----- */
 
 h1 path:nth-child(2) {
     stroke-dasharray: 545;
     stroke-dashoffset: 545;
-    animation: line-animation 2s ease forwards;
-}
-
-h1 path:nth-child(3) {
-    stroke-dasharray: 180;
-    stroke-dashoffset: 180;
-    animation: line-animation 2s ease forwards;
 }
 
 h1 path:nth-child(4) {
     stroke-dasharray: 305;
     stroke-dashoffset: 305;
-    animation: line-animation 2s ease forwards;
 }
 
 h1 path:nth-child(5) {
     stroke-dasharray: 245;
     stroke-dashoffset: 245;
-    animation: line-animation 2s ease forwards;
-}
-
-h1 path:nth-child(6) {
-    stroke-dasharray: 180;
-    stroke-dashoffset: 180;
-    animation: line-animation 2s ease forwards;
-}
-
-h1 path:nth-child(7) {
-    stroke-dasharray: 180;
-    stroke-dashoffset: 180;
-    animation: line-animation 2s ease forwards;
 }
 
 h1 path:nth-child(8) {
     stroke-dasharray: 235;
     stroke-dashoffset: 235;
-    animation: line-animation 2s ease forwards;
 }
 
 h1 path:nth-child(9) {
     stroke-dasharray: 250;
     stroke-dashoffset: 250;
-    animation: line-animation 2s ease forwards;
-}
-
-h1 path:nth-child(10) {
-    stroke-dasharray: 180;
-    stroke-dashoffset: 180;
-    animation: line-animation 2s ease forwards;
 }
 
 h1 path:nth-child(11) {
     stroke-dasharray: 195;
     stroke-dashoffset: 195;
-    animation: line-animation 2s ease forwards;
 }
 
 h1 path:nth-child(12) {
     stroke-dasharray: 150;
     stroke-dashoffset: 150;
-    animation: line-animation 2s ease forwards;
 }
 
+h1 path:nth-child(3),
+h1 path:nth-child(6),
+h1 path:nth-child(7),
+h1 path:nth-child(10),
 h1 path:nth-child(13) {
     stroke-dasharray: 180;
     stroke-dashoffset: 180;
-    animation: line-animation 2s ease forwards;
 }
 
-/* ----- Logo Johan Labbe ----- */
+/* ----- Johan Labbe ----- */
 
 h2 path:nth-child(2) {
     stroke-dasharray: 160;
     stroke-dashoffset: 160;
-    animation: line-animation 2s ease forwards;
 
 }
 
 h2 path:nth-child(3) {
     stroke-dasharray: 130;
     stroke-dashoffset: 130;
-    animation: line-animation 2s ease forwards;
 }
 
 h2 path:nth-child(4) {
     stroke-dasharray: 240;
     stroke-dashoffset: 240;
-    animation: line-animation 2s ease forwards;
 }
 
-h2 path:nth-child(5) {
+h2 path:nth-child(5),
+h2 path:nth-child(8)
+ {
     stroke-dasharray: 165;
     stroke-dashoffset: 165;
-    animation: line-animation 2s ease forwards;
 }
 
 h2 path:nth-child(6) {
     stroke-dasharray: 215;
     stroke-dashoffset: 215;
-    animation: line-animation 2s ease forwards;
 }
 
 h2 path:nth-child(7) {
     stroke-dasharray: 150;
     stroke-dashoffset: 150;
-    animation: line-animation 2s ease forwards;
 }
 
-h2 path:nth-child(8) {
-    stroke-dasharray: 165;
-    stroke-dashoffset: 165;
-    animation: line-animation 2s ease forwards;
-}
-
-h2 path:nth-child(9) {
-    stroke-dasharray: 190;
-    stroke-dashoffset: 190;
-    animation: line-animation 2s ease forwards;
-}
-
+h2 path:nth-child(9),
 h2 path:nth-child(10) {
     stroke-dasharray: 190;
     stroke-dashoffset: 190;
-    animation: line-animation 2s ease forwards;
 }
 
 h2 path:nth-child(11) {
     stroke-dasharray: 195;
     stroke-dashoffset: 195;
-    animation: line-animation 2s ease forwards;
 }
 
 @keyframes line-animation {
