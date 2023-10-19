@@ -38,7 +38,13 @@ h3 {
 
 @media (max-width: 705px) {
     h3 {
-        font-size: 2rem;
+        font-size: 4rem;
+        margin:  3rem 0 2rem 0;
+    }
+
+    /* h3 Mes Projets */
+    .h3v {
+        margin:  5rem 0 2rem 0;
     }
 }
 
@@ -149,11 +155,8 @@ h3 {
 }
 
 .block-1,
+.block-2,
 .block-3 {
-    height: 100%;
-}
-
-.block-2 {
     height: 100%;
 }
 
@@ -256,6 +259,95 @@ h3 {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+}
+
+/* ----- CSS NavBar ----- */
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar img {
+    height: 50px;
+    padding: 0 1.5rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    padding: 2rem;
+}
+
+.navbar li:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.navbar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+/* ----- Media query NavBar ----- */
+
+@media (max-width: 1460px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar li {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 705px) {
+    .navbar img {
+        height: 30px;
+        padding: 0 1rem;
+    }
+
+    .navbar li {
+        padding: 1rem;
+    }
+
+    .navbar a {
+        font-size: 1.5rem;
+    }
+}
+
+/* ----- Animation Elements Navbar ----- */
+
+.navbar ul li:nth-child(2) {
+    transition-delay: 100ms;
+}
+
+.navbar ul li:nth-child(3) {
+    transition-delay: 200ms;
+}
+
+.navbar ul li:nth-child(4) {
+    transition-delay: 300ms;
+}
+
+.navbar ul li:nth-child(5) {
+    transition-delay: 400ms;
 }
 
 /* ----- Logo SVG ----- */
@@ -362,91 +454,6 @@ h2 path:nth-child(10) {
     }
 }
 
-/* ----- CSS NavBar ----- */
-
-.navbar {
-    background-color: rgba(0, 0, 0, 0.1);
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar img {
-    height: 50px;
-    padding: 0 1.5rem;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-}
-
-.navbar li {
-    padding: 2rem;
-}
-
-.navbar li:hover {
-    background-color: rgba(0, 0, 0, 0.15);
-}
-
-.navbar a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    font-size: 2rem;
-    font-weight: 900;
-}
-
-/* ----- Media query NavBar ----- */
-
-@media (max-width: 1460px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .navbar li {
-        padding: 1rem;
-    }
-}
-
-/* ----- Animation Elements Navbar ----- */
-
-.navbar ul li:nth-child(2) {
-    transition-delay: 100ms;
-}
-
-.navbar ul li:nth-child(3) {
-    transition-delay: 200ms;
-}
-
-.navbar ul li:nth-child(4) {
-    transition-delay: 300ms;
-}
-
-.navbar ul li:nth-child(5) {
-    transition-delay: 400ms;
-}
-
-/* ----- ----------- ----- */
-
-
-
-/* ----- Lazy Load CSS ----- */
-
-.lazyload {
-    background-size: cover;
-    background-position: center;
-}
-
 /* ----- ----------- ----- */
 
 
@@ -474,6 +481,18 @@ h2 path:nth-child(10) {
     margin: 2%;
     width: 60%;
 }
+
+@media (max-width: 705px) {
+    .block-1 {
+        padding: 6rem 4rem 0 4rem;
+    }
+
+    .block-1 section p {
+        width: 100%;
+    }
+}
+
+
 
 /* ----- Animation Elements Block-1 ----- */
 
@@ -886,6 +905,8 @@ circle {
     margin: 2rem;
 }
 
+/* ----- Skill Container ----- */
+
 .skill-container {
     display: flex;
 }
@@ -938,6 +959,14 @@ circle {
     transition-delay: 200ms;
     animation-delay: 200ms;
 
+}
+
+/* ----- Media query Skill Container ----- */
+
+@media (max-width: 1200px) {
+    .skill-container {
+        flex-direction: column;
+    }
 }
 
 /* ----- ----------- ----- */
