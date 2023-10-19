@@ -43,8 +43,12 @@ h3 {
     }
 
     /* h3 Mes Projets */
-    .h3v {
+    .h3mp {
         margin:  5rem 0 2rem 0;
+    }
+
+    .h3mr {
+        margin:  7rem 0 2rem 0;
     }
 }
 
@@ -158,11 +162,6 @@ h3 {
 .block-2,
 .block-3 {
     height: 100%;
-}
-
-.block-end,
-.footer-info {
-    height: 50vh;
 }
 
 /* ----- ----------- ----- */
@@ -299,6 +298,24 @@ h3 {
     font-weight: 900;
 }
 
+/* ----- Animation Elements Navbar ----- */
+
+.navbar ul li:nth-child(2) {
+    transition-delay: 100ms;
+}
+
+.navbar ul li:nth-child(3) {
+    transition-delay: 200ms;
+}
+
+.navbar ul li:nth-child(4) {
+    transition-delay: 300ms;
+}
+
+.navbar ul li:nth-child(5) {
+    transition-delay: 400ms;
+}
+
 /* ----- Media query NavBar ----- */
 
 @media (max-width: 1460px) {
@@ -330,24 +347,6 @@ h3 {
     .navbar a {
         font-size: 1.5rem;
     }
-}
-
-/* ----- Animation Elements Navbar ----- */
-
-.navbar ul li:nth-child(2) {
-    transition-delay: 100ms;
-}
-
-.navbar ul li:nth-child(3) {
-    transition-delay: 200ms;
-}
-
-.navbar ul li:nth-child(4) {
-    transition-delay: 300ms;
-}
-
-.navbar ul li:nth-child(5) {
-    transition-delay: 400ms;
 }
 
 /* ----- Logo SVG ----- */
@@ -482,17 +481,27 @@ h2 path:nth-child(10) {
     width: 60%;
 }
 
-@media (max-width: 705px) {
-    .block-1 {
-        padding: 6rem 4rem 0 4rem;
-    }
-
+@media (max-width: 1000px) {
     .block-1 section p {
         width: 100%;
     }
 }
 
+@media (max-width: 705px) {
+    .block-1 {
+        padding: 6rem 4rem 0 4rem;
+    }
+    
+    .wave1 {
+        display: none;
+    }
+}
 
+@media (max-width: 410px) {
+    .block-1 {
+        padding: 0;
+    }
+}
 
 /* ----- Animation Elements Block-1 ----- */
 
