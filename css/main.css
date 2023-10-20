@@ -855,24 +855,54 @@ circle {
     animation: progress 2s ease;
 }
 
-section:nth-child(1) .language-used div:nth-child(1) circle:nth-child(2) {
+.mp .language-used div:nth-child(1) circle:nth-child(2) {
     stroke: #1ed0dd;
-    stroke-dashoffset: calc(535 - (535 * 70.7) / 100);
+    stroke-dashoffset: calc(535 - (535 * 71.7) / 100);
 }
 
-section:nth-child(1) .language-used div:nth-child(2) circle:nth-child(2) {
+.mp .language-used div:nth-child(2) circle:nth-child(2) {
     stroke: #178fdf;
-    stroke-dashoffset: calc(535 - (535 * 26.4) / 100);
+    stroke-dashoffset: calc(535 - (535 * 24.8) / 100);
 }
 
-section:nth-child(1) .language-used div:nth-child(3) circle:nth-child(2) {
+.mp .language-used div:nth-child(3) circle:nth-child(2) {
     stroke: #1eddbd;
-    stroke-dashoffset: calc(535 - (535 * 2.9) / 100);
+    stroke-dashoffset: calc(535 - (535 * 3.5) / 100);
 }
 
-section:nth-child(1) .language-used div:nth-child(4) circle:nth-child(2) {
+.wk .language-used div:nth-child(1) circle:nth-child(2) {
+    stroke: #1ed0dd;
+    stroke-dashoffset: calc(535 - (535 * 66.4) / 100);
+}
+
+.wk .language-used div:nth-child(2) circle:nth-child(2) {
+    stroke: #178fdf;
+    stroke-dashoffset: calc(535 - (535 * 22.7) / 100);
+}
+
+.wk .language-used div:nth-child(3) circle:nth-child(2) {
+    stroke: #1eddbd;
+    stroke-dashoffset: calc(535 - (535 * 10.9) / 100);
+}
+
+.dl .language-used div:nth-child(1) circle:nth-child(2) {
+    stroke: #1ed0dd;
+    stroke-dashoffset: calc(535 - (535 * 64.6) / 100);
+}
+
+.dl .language-used div:nth-child(2) circle:nth-child(2) {
+    stroke: #178fdf;
+    stroke-dashoffset: calc(535 - (535 * 31.4) / 100);
+}
+
+.dl .language-used div:nth-child(3) circle:nth-child(2) {
+    stroke: #1eddbd;
+    stroke-dashoffset: calc(535 - (535 * 3) / 100);
+}
+
+.dl .language-used div:nth-child(4) circle:nth-child(2) {
     stroke: #18af64;
-    stroke-dashoffset: calc(535 - (535 * 2.9) / 100);
+    stroke-dashoffset: calc(535 - (535 * 1) / 100);
 }
 
 @keyframes progress {
