@@ -855,6 +855,8 @@ circle {
     animation: progress 2s ease;
 }
 
+/* Projet Mon Portfolio */
+
 .mp .language-used div:nth-child(1) circle:nth-child(2) {
     stroke: #1ed0dd;
     stroke-dashoffset: calc(535 - (535 * 71.7) / 100);
@@ -870,6 +872,8 @@ circle {
     stroke-dashoffset: calc(535 - (535 * 3.5) / 100);
 }
 
+/* Projet Wikanime */
+
 .wk .language-used div:nth-child(1) circle:nth-child(2) {
     stroke: #1ed0dd;
     stroke-dashoffset: calc(535 - (535 * 66.4) / 100);
@@ -884,6 +888,8 @@ circle {
     stroke: #1eddbd;
     stroke-dashoffset: calc(535 - (535 * 10.9) / 100);
 }
+
+/* Projet Délice Sucré */
 
 .dl .language-used div:nth-child(1) circle:nth-child(2) {
     stroke: #1ed0dd;
