@@ -59,6 +59,12 @@ h3 {
     }
 }
 
+@media (max-width: 300px) {
+    h3 {
+        font-size: 2rem;
+    }
+}
+
 /* ----- ----------- ----- */
 
 
@@ -353,6 +359,12 @@ h3 {
 
     .navbar a {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .navbar a {
+        font-size: 1.35rem;
     }
 }
 
@@ -1015,7 +1027,6 @@ section:nth-child(1) .language-used div:nth-child(4) circle:nth-child(2) {
     margin: 2rem;
     padding: 2rem;
     border-radius: 2rem;
-    background-color: #1f6e8c;
     background-color: #0e2954;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     transition: 0.5s;
@@ -1095,6 +1106,14 @@ section:nth-child(1) .language-used div:nth-child(4) circle:nth-child(2) {
     }
 }
 
+@media (max-width: 300px) {
+    .skill-container div {
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 1rem;
+    }
+}
+
 /* ----- ----------- ----- */
 
 
@@ -1137,6 +1156,44 @@ section:nth-child(1) .language-used div:nth-child(4) circle:nth-child(2) {
 
 .block-end p {
     font-size: 2rem;
+}
+
+/* ----- Media Query Block End ----- */
+
+@media (max-width: 705px) {
+    .wave3 {
+        display: none;
+    }
+
+    .h3mr {
+        margin: 3rem 0 2rem 0;
+    }
+
+    .block-end p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 620px) {
+    .block-end p {
+        font-size: 1.35rem;
+    }
+
+    .block-end li {
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .block-end img {
+        height: 3rem;
+    }
+}
+
+@media (max-width: 440px) {
+    .block-3 p {
+        text-align: center;
+    }
 }
 
 /* ----- ----------- ----- */
@@ -1214,16 +1271,6 @@ section:nth-child(1) .language-used div:nth-child(4) circle:nth-child(2) {
 
 /* ----- Media Query Footer Info ----- */
 
-@media (max-width: 705px) {
-    .wave3 {
-        display: none;
-    }
-
-    .h3mr {
-        margin: 3rem 0 2rem 0;
-    }
-}
-
 @media (max-width: 620px) {
     .footer-info p {
         font-size: 1.35rem;
@@ -1241,6 +1288,10 @@ section:nth-child(1) .language-used div:nth-child(4) circle:nth-child(2) {
 
     .copy-text a  {
         font-size: 1.15rem;
+    }
+
+    .footer-info p:nth-child(3) {
+        margin: 1rem 2rem;
     }
 }
 
