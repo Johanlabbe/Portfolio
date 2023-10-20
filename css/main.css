@@ -47,8 +47,15 @@ h3 {
         margin:  5rem 0 2rem 0;
     }
 
+    /* h3 Mes Réseaux */
     .h3mr {
         margin:  7rem 0 2rem 0;
+    }
+}
+
+@media (max-width: 620px) {
+    h3 {
+        font-size: 3rem;
     }
 }
 
@@ -673,68 +680,6 @@ h2 path:nth-child(10) {
     }
 }
 
-/* ----- Media query Card Element ----- */
-
-@media (max-width: 1275px) {
-    .card-element-container,
-    .card-element,
-    .box {
-        display: none;
-    }
-
-    .responsive {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: justify;
-        border-radius: 2rem;
-        width: 95%;
-        padding: 2rem;
-        margin: 0 auto 2rem auto;
-        background: rgba(132, 179, 171, 0.25);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    .responsive p {
-        font-size: 2rem;
-    }
-
-    .language-used section {
-        justify-content: center;
-    }
-
-    .language-used h5 {
-        font-size: 1.5rem;
-    }
-    .language-used h4 {
-        margin: 2rem;
-    }
-
-    .responsive a {
-        display: flex;
-        text-decoration: none;
-        color: white;
-        padding: 1.25rem;
-        margin: 1rem;
-        font-size: 1.5rem;
-        background: rgba(207, 207, 207, 0.15);
-        border-radius: 1rem;
-    }
-}
-
-/* ----- Media query Block-2 ----- */
-
-@media (max-width: 705px) {
-    .h3mp {
-        margin: 3rem 0 2rem 0;
-    }
-
-    .wave2 {
-        display: none;
-    }
-}
-
 /* ----- CSS Popover ----- */
 
 .popover {
@@ -844,14 +789,6 @@ h2 path:nth-child(10) {
     }
 }
 
-/* ----- Media query Popover ----- */
-
-@media (max-width: 1665px) {
-    .popover {
-        width: 85%;
-    }
-}
-
 /* ----- CSS Popover Bar ----- */
 
 .popover-info h4 {
@@ -955,6 +892,92 @@ section:nth-child(1) .language-used div:nth-child(4) circle:nth-child(2) {
     font-weight: 900;
 }
 
+/* ----- Media query Popover ----- */
+
+@media (max-width: 1665px) {
+    .popover {
+        width: 85%;
+    }
+}
+
+/* ----- Media query Card Element ----- */
+
+@media (max-width: 1275px) {
+    .card-element-container,
+    .card-element,
+    .box {
+        display: none;
+    }
+
+    .responsive {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        border-radius: 2rem;
+        width: 95%;
+        padding: 2rem;
+        margin: 0 auto 2rem auto;
+        background: rgba(132, 179, 171, 0.25);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .responsive p {
+        font-size: 2rem;
+    }
+
+    .language-used section {
+        justify-content: center;
+    }
+
+    .language-used h5 {
+        font-size: 1.5rem;
+    }
+    .language-used h4 {
+        margin: 2rem;
+    }
+
+    .responsive a {
+        display: flex;
+        text-decoration: none;
+        color: white;
+        padding: 1.25rem;
+        margin: 1rem;
+        font-size: 1.5rem;
+        background: rgba(207, 207, 207, 0.15);
+        border-radius: 1rem;
+    }
+}
+
+/* ----- Media query Block-2 ----- */
+
+@media (max-width: 705px) {
+    .h3mp {
+        margin: 3rem 0 2rem 0;
+    }
+
+    .wave2 {
+        display: none;
+    }
+}
+
+@media (max-width: 620px) {
+    .popover-title h4 {
+        font-size: 2.5rem;
+        margin: 1rem;
+    }
+
+    .popover-info h4 {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    .responsive p {
+        font-size: 1.35rem;
+    }
+}
+
 /* ----- ----------- ----- */
 
 
@@ -1034,6 +1057,34 @@ section:nth-child(1) .language-used div:nth-child(4) circle:nth-child(2) {
     transition-delay: 200ms;
     animation-delay: 200ms;
 
+}
+
+/* ----- Media query Block-3 ----- */
+
+@media (max-width: 705px) {
+    .block-3 {
+        padding: 0;
+    }
+
+    .block-3 p {
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 620px) {
+    .block-3 p {
+        font-size: 1.35rem;
+    }
+
+    .skill-container h4 {
+        font-size: 2.5rem;
+        margin: 1rem;
+    }
+
+    .skill-container li {
+        font-size: 1.35rem;
+        margin: 1rem 0;
+    }
 }
 
 /* ----- Media query Skill Container ----- */
@@ -1163,9 +1214,9 @@ section:nth-child(1) .language-used div:nth-child(4) circle:nth-child(2) {
 
 /* ----- Media Query Footer Info ----- */
 
-@media () {
+/* @media () {
 
-}
+} */
 
 /* ----- Copy text CSS ----- */
 
