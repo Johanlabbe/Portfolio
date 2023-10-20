@@ -950,7 +950,7 @@ circle {
 
 /* ----- Media query Card Element ----- */
 
-@media (max-width: 1275px) {
+@media (max-width: 1280px) {
     .card-element-container,
     .card-element,
     .box {
