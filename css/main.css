@@ -948,6 +948,18 @@ circle {
     }
 }
 
+@media (max-height: 970px) {
+    .popover-title h4,
+    .language-used h4,
+    .popover p {
+        margin: 1rem;
+    }
+
+    .popover {
+        padding: 1rem;
+    }
+}
+
 /* ----- Media query Card Element ----- */
 
 @media (max-width: 1280px) {
