@@ -528,15 +528,19 @@ h2 path:nth-child(10) {
     .block-1 {
         padding: 0rem 4rem 0 4rem;
     }
+
+    .block-1 section p {
+        margin: 1.5rem 1rem;
+    }
     
     .wave1 {
         display: none;
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 620px) {
     .block-1 section p {
-        font-size: 1.15rem;
+        font-size: 1.35rem;
         width: 85%;
     }
 
@@ -1155,6 +1159,12 @@ section:nth-child(1) .language-used div:nth-child(4) circle:nth-child(2) {
 
 .footer-info img {
     width: 2rem;
+}
+
+/* ----- Media Query Footer Info ----- */
+
+@media () {
+
 }
 
 /* ----- Copy text CSS ----- */
