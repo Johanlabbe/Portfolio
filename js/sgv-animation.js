@@ -1,3 +1,7 @@
+// --------------------------------
+//  Ce fichier n'est pas utilisée
+// --------------------------------
+
 // Récupérez la référence de l'élément SVG
 const svg = document.getElementById("mp-logo");
 
