@@ -1214,9 +1214,35 @@ section:nth-child(1) .language-used div:nth-child(4) circle:nth-child(2) {
 
 /* ----- Media Query Footer Info ----- */
 
-/* @media () {
+@media (max-width: 705px) {
+    .wave3 {
+        display: none;
+    }
 
-} */
+    .h3mr {
+        margin: 3rem 0 2rem 0;
+    }
+}
+
+@media (max-width: 620px) {
+    .footer-info p {
+        font-size: 1.35rem;
+    }
+
+    .footer-info h3 {
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 465px) {
+    .copy-text {
+        flex-direction: column;
+    }
+
+    .copy-text a  {
+        font-size: 1.15rem;
+    }
+}
 
 /* ----- Copy text CSS ----- */
 
