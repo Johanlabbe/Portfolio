@@ -948,7 +948,7 @@ circle {
     }
 }
 
-@media (max-height: 970px) {
+@media (max-height: 1050px) {
     .popover-title h4,
     .language-used h4,
     .popover p {
@@ -957,6 +957,10 @@ circle {
 
     .popover {
         padding: 1rem;
+    }
+
+    .popover p {
+        font-size: 1.35rem;
     }
 }
 
